@@ -41,3 +41,16 @@ J Wynia
 @jwynia
 j@wynia.org
 http://wynia.org
+
+======================
+Design Goals
+=====================
+
+1. Modular HTML that is easily generated via server-side code/templates.
+2. Easily skinnable for colors and logos.
+3. Includes all common elements used in web applications, especially forms and
+   tables for data grids.
+4. Makes optimum use of horizontal space, which is typically at a premium when
+   displaying the kinds of data in line of business applications.
+5. Makes pieces interchangable so that the gadgets and components that make
+   sense for your application can be used and the rest tossed.
