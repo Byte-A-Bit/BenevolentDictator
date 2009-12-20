@@ -1,0 +1,43 @@
+Benevolent Dictator is an open source HTML theme/template for building web
+applications.
+
+The name comes from a term that's been applied to open source projects like
+Linux where one person is ostensibly the "dictator", but because the project
+is open source, and can be forked, that dictatorship only works when it's
+in the best interest of the project. Since this theme is an open source "admin"
+template, I thought the name fit.
+
+I'm starting this project because I do corporate ASP.NET work. In the course
+of normal activities, I often need to build intranet and other "back office"
+web applications, but don't have the time/resources to do a dedicated design.
+At the same time, the impressions of these applications is directly affected
+by how they look. So, having a reasonably attractive template is really useful.
+
+There are plenty of sites offering free CSS-based templates that are really
+worth looking at. The problem with them is that 80% are for blog sites and
+most of the rest are for corporate "home pages".
+
+A while back, the site ThemeForest (http://themeforest.net/) discovered how
+much pent-up demand there is for web application templates when that category
+proved to be their most popular, shortly after launching.
+
+I played a part in that popularity, having bought 10+ of those admin themes over
+the last 6 months or so. Unfortunately, while I liked the way they look, when
+I sat down to turn the HTML into my applications: whether they be ASP.NET MVC,
+PHP or Rails, that pleasant feeling I had when buying them went away.
+
+In every case, the HTML and CSS were structured so that breaking the visual
+elements into the kinds of components that work in application frameworks
+or CMS engines was painful. For instance, if you were generating the menu
+from a data object, it was difficult to just foreach your way to generating
+the HTML. The same is true of augmenting or tweaking the layouts.
+
+In short, actually *using* those themes for real world applications got really
+hairy, really quickly. So, I'm hoping to build one that addresses these problems.
+
+If you'd like to help out, just say so.
+
+J Wynia
+@jwynia
+j@wynia.org
+http://wynia.org
