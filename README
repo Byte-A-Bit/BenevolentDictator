@@ -54,13 +54,5 @@ Design Goals
    displaying the kinds of data in line of business applications.
 5. Makes pieces interchangable so that the gadgets and components that make
    sense for your application can be used and the rest tossed.
-
-=====================
-Tools and Process
-=====================
-
-1. I'm designing the overall grid using Boks for export of BlueprintCSS-powered
-   HTML.
-2. The various subcomponents created. Permutations of these bits inside the grid
-   tested.
-3. All of the templates skinned with colors and graphics, etc.
+6. Aesthetically pleasing, particularly in "modern" web browsers.
+7. Acceptible aesthetics in Internet Explorer.
