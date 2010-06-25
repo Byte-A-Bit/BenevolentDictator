@@ -203,6 +203,9 @@
 		padding-right: 5px;
 		margin: 0;
 	}
+	.PaginationWidget ul li img {
+		margin-bottom: -2px;
+	}
 	.PaginationWidget ul li a {
 		padding-left:8px;
 		padding-right:8px;
