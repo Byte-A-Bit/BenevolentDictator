@@ -8,6 +8,55 @@
 		<link rel="stylesheet" href="http://cdn.cloudfiles.mosso.com/c29152/BlueprintIE.css" type="text/css" />
 		<link rel="stylesheet" href="BenevolentDictator.css" type="text/css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript">
+		  var currentMenuItem = "";
+		  $(document).ready(function() {
+          $("a.MenuTab").click(function() {
+           var contentId = "#" + $(this).attr('id').replace("MenuItem","MenuContent");
+           var menuContent = $(contentId).html();
+		   if(menuContent == null){
+			currentMenuItem = contentId;
+			$("#MenuContentContainer").html(menuContent);
+			$("#MenuContentContainer").hide();
+			location.href=$(this).attr("href");
+		   } else {
+			$("#MenuContentContainer").html(menuContent);
+			if(currentMenuItem != contentId){
+				currentMenuItem = contentId;
+				$("#MenuContentContainer").show();
+			} else {
+				$("#MenuContentContainer").toggle();
+			} 
+		   }
+          });
+		});
+		</script>
+		<style>
+			.MenuContent {
+				display:none;
+				
+			}
+			
+			#MenuContentContainer {
+				display:none;
+				background-color: #333333;
+				color: white;
+				padding: 15px;
+				
+				font-size: 14px;
+				font-weight: bold;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+				-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+				border: 1px solid #333333;
+				background-image: -moz-linear-gradient(100% 100% 90deg, #333333, #444444);
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444444), to(#333333));
+				padding: 10px;	
+				margin-top: -5px;
+				
+			}
+		</style>
 		</head>
 	<body>
 		<div class="container" id="BodyContainer">
@@ -22,12 +71,47 @@
 			<div class="span-24 last" id="MenuContainer">
 				<div id="MainMenu">
 					<ul id="MainMenuList">
-						<li><a href="">Home</a></li>
-						<li><a href="">Orders</a></li>
-						<li><a href="">Users</a></li>
-						<li><a href="">Messages</a></li>
+						<li><a href="http://google.com" class="MenuTab" id="HomeMenuItem">Home</a></li>
+						<li><a href="#" class="MenuTab" id="OrdersMenuItem">Orders</a></li>
+						<li><a href="#" class="MenuTab" id="UsersMenuItem">Users</a></li>
+						<li><a href="#" class="MenuTab" id="MessagesMenuItem">Messages</a></li>
 					</ul>
 				</div>
+				<!-- This is a section if divs that  -->
+				<div id="MenuContentContainer">
+				  PLACEHOLDER
+				</div>
+				<div id="OrderItemsContainer">
+				  <div id="OrdersMenuContent" class="MenuContent">
+						<ul>
+							<li>Find Orders</li>
+							<li>Create New Order</li>
+							<li>Recent Orders</li>
+						</ul>
+						<p>
+							You can put any HTML content you want for your menu: tables, grids of links, headings, etc. This entire div just displays below the menu when requested.
+						</p>
+					</div>
+				  <div id="UsersMenuContent" class="MenuContent">
+						<div style="float:right; margin: 15px;">
+							All of the mega menu functionality is convention based for naming.
+						</div>
+						<ul>
+							<li>Find User</li>
+							<li>Create New User</li>
+							<li>Browse Users By Role</li>
+						</ul>
+					</div>
+					<div id="MessagesMenuContent" class="MenuContent">
+						<ul>
+							<li>Find Message</li>
+							<li>Create New Message</li>
+							<li>Browse All Pending Messages</li>
+						</ul>
+					</div>
+				</div>
+			
+				
 			</div>
 		
 			<div class="span-24 last" id="MainContentContainer">
