@@ -77,11 +77,20 @@
 						<li><a href="#" class="MenuTab" id="MessagesMenuItem">Messages</a></li>
 					</ul>
 				</div>
-				<!-- This is a section if divs that  -->
+				<!-- 
+					This is a section if divs that hold the content for each menu item as well as the container where
+					we swap them in and out. MenuContentContainer has its content replaced and then it's display toggled.
+				-->
 				<div id="MenuContentContainer">
 				  PLACEHOLDER
 				</div>
+				</div>
+				
 				<div id="OrderItemsContainer">
+				<!-- 
+					Create one XYZMenuContent for each XYZMenuItem in the MainMenuList. The plumbing for the menu relies on the XYZ 
+					part being the same for both.
+				-->	
 				  <div id="OrdersMenuContent" class="MenuContent">
 						<ul>
 							<li>Find Orders</li>
