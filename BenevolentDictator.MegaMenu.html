@@ -16,16 +16,16 @@
            var menuContent = $(contentId).html();
 		   if(menuContent == null){
 			currentMenuItem = contentId;
+			$("#MenuContentContainer").slideUp();
 			$("#MenuContentContainer").html(menuContent);
-			$("#MenuContentContainer").hide();
 			location.href=$(this).attr("href");
 		   } else {
 			$("#MenuContentContainer").html(menuContent);
 			if(currentMenuItem != contentId){
 				currentMenuItem = contentId;
-				$("#MenuContentContainer").show();
+				$("#MenuContentContainer").slideDown();
 			} else {
-				$("#MenuContentContainer").toggle();
+				$("#MenuContentContainer").slideUp();
 			} 
 		   }
           });
