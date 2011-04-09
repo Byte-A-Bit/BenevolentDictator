@@ -3,7 +3,7 @@
 		background-color: #ffffff;
 		
 	}
-	button {
+	button, input[type='submit'] {
 			color: white;
 			font-size: 1.1em;
 			border: solid 1px #385b7b;
@@ -16,7 +16,7 @@
 			-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
 			
 	}
-	button:hover {
+	button:hover, input[type='submit']:hover {
 		-webkit-transform: scale(1.1);
 		-moz-transform: scale(1.1);
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0, .5);
@@ -29,6 +29,11 @@
 		margin-bottom: 10px;
 	}
 	input[type='text'] {
+		font-size: 1.2em;
+		width: 80%;
+	}
+	input[type='password']
+    {
 		font-size: 1.2em;
 		width: 80%;
 	}
