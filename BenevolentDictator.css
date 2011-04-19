@@ -290,4 +290,56 @@
 	#CopyrightStatement {
 		text-align: right;
 	}
+	/*
+	 The approach to layout for the "NumericMetricBox" stuff leaves much to be desired. However
+	 I'm not the world's greatest CSS expert, so I keep running stuck. Any suggestions, improvements
+	 for this kind of thing are greatly appreciated. j@wynia.org
+	*/
+	
+	.NumericMetricBox{
+		float: left;
+		height: 100px;
+		width: 125px;
+		margin: 20px;
+		
+		background-color: #ffffff;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+		-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+		background-image: -moz-linear-gradient(100% 100% 90deg, #eeeeee, #ffffff);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#eeeeee));
+		border: 1px solid #cccccc;
+		padding: 5px;
+		text-align: right;
+		
+	}
+	.NumericMetricNumber{
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+	.NumericMetricDesc{
+		border-top: solid 1px #cccccc;
+		padding-top: 3px;
+	}
+	.NumericMetricHealthy{
+		background-color: #4f8d0d;
+		background-image: -moz-linear-gradient(100% 100% 90deg, #4f8d0d, #5ba210);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5ba210), to(#4f8d0d));
+		color: white;
+	}
+	.NumericMetricWarning{
+		background-color: #ffad1d;
+		background-image: -moz-linear-gradient(100% 100% 90deg, #e59b19, #ffad1d);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffad1d), to(#e59b19));
+		color: white;
+	}
+	.NumericMetricCritical{
+		background-color: #a70f0f;
+		background-image: -moz-linear-gradient(100% 100% 90deg, #a70f0f, #c01313);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c01313), to(#a70f0f));
+		color: white;
+	}
+	
+	
 	
